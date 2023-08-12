@@ -89,8 +89,10 @@ optional arguments:
             pos_s[j] -= 1
         word = random.choice(words)
         if j in pos_c:
-            word.capitalize()
-        password += word
+            cap = word.capitalize()
+            password += cap
+        else:
+            password += word
         words.remove(word)
 
     while pos_n[w] > 0:
