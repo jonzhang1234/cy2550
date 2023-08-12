@@ -77,7 +77,7 @@ optional arguments:
         i += 1
 
     password = ""
-    pos_c = random.choices(range(w), k=c)
+    pos_c = random.sample(range(w), c)
     pos_n = hist(w, n)
     pos_s = hist(w, s)
     for j in range(w):
